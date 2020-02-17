@@ -21,10 +21,10 @@ watch
   ],
   nombre :'',
   promedio :''
- }
- 
+},
+
 methods :{
-   agrgarNota:function(){
+   agregarNota:function(){
      estadoA=false;
 
         if (this.promedio>=12.5) {
@@ -32,12 +32,12 @@ methods :{
         }
         if (this.nombre!="" && this.promedio!="") {
 
-          this.lista.push({nombre:this.nombre, promedio:this.promedio,estas:this.estadoA})
+          this.lista.push({nombre:this.nombre, promedio:this.promedio,estado:this.estadoA});
           this.nombre="";
           this.promedio="";
 
         }else {
-          alert("Ingrese el nombre del estudiante")
+          alert("Ingrese el nombre del estudiante");
         }
 
    }
